@@ -1,0 +1,49 @@
+
+
+.con {
+    position: relative;
+    width: 290px;
+  }
+  
+  
+  
+  .overlay {
+    position: absolute;
+    bottom: 70%;
+    left: 1.5%;
+  
+    right: 0;
+    background-color: #3b71ca;
+    overflow: hidden;
+    width: 350px;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .con:hover .overlay {
+    left: 0;
+    bottom: 0px;
+    height:220px;
+    width: 290px;
+
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .iconport
+{
+  font-size: 40px;
+  color: black;
+  margin-left: 20px;
+  margin-right: 5px;
+  
+}
