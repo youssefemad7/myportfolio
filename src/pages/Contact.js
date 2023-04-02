@@ -60,13 +60,13 @@ const Contact = () => {
                 />
                 <input
                   className='outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
-                  type='text'
+                  type='email'
                   placeholder='Your email address'
                 />
               </div>
               <input
                 className='outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
-                type='text'
+                type='submit'
                 placeholder='Your message'
               />
               <button className='btn mb-[30px] mx-auto lg:mx-0 self-start'>
