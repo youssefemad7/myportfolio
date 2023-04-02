@@ -16,7 +16,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_i9b30vt', 'template_poxvsmu', form.current, '9yIoQi660VaeP2aIP')
+    emailjs.sendForm('service_ouh1t8z', 'template_poxvsmu', form.current, '9yIoQi660VaeP2aIP')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
