@@ -1,3 +1,22 @@
+/* Scrool */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 56, 56); 
+  border-radius: 10px;
+}
+
+
+
 
 
 .con {
@@ -47,3 +66,11 @@
   margin-right: 5px;
   
 }
+@media (max-width:1023px){
+ 
+  .img1
+  {
+    display: none;
+  }
+}
+

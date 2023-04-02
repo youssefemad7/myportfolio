@@ -31,7 +31,9 @@ const About = () => {
           {/* image */}
           <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden'>
 
-            <img src={YoussefImg} alt=''            style={{height:'600px'}}/>
+            <img src={YoussefImg} alt=''      
+            className='img1'
+            style={{height:'600px'}}/>
           </div>
           {/* text */}
           <motion.div

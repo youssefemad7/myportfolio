@@ -9,7 +9,14 @@ import Image6 from '../img/portfolio/6.png';
 import Image7 from '../img/portfolio/7.png';
 // CSS
 import './App.css'
-
+// react router dom
+import { Container } from 'react-dom';
+// import link
+import { Link } from 'react-router-dom';
+// import motion
+import { motion } from 'framer-motion';
+// import transition
+import { transition1 } from '../transitions';
 // import context
 import { CursorContext } from '../context/CursorContext';
 // Fontawesome
@@ -24,19 +31,19 @@ const Portfolio = () => {
 
       <div className='container mx-auto h-full relative '>
 
-        <div className='flex flex-col row lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8 '>
+        <div className='flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8 '>
         
          
           {/* image grid */}
           <div // onMouseEnter={mouseEnterHandler}
             // onMouseLeave={mouseLeaveHandler} 
-            className='grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-3 sm:grid-cols-2  xs:grid-cols-1 gap-8  port 	'
+            className='grid grid-cols-4   lg:gap-4 port 	'
 
            
           >
             {/* image */}
 
-        <div className='con max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden   '>
+        <div className='con max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden  '>
             <img
                 className='object-cover h-full lg:h-[220px]  image'
                 src={Image1}

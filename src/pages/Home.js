@@ -8,31 +8,33 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 // import transition
 import { transition1 } from '../transitions';
-// cursor context
+// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
-const Home = () => {
+const About = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0, y: '100%' }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: '100%' }}
       transition={transition1}
       className='section'
     >
-      <div className='container mx-auto h-full relative'>
+      <div
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
+        className='container mx-auto h-full relative'
+      >
         {/* text & img wrapper */}
-        <div className='flex flex-col justify-center'>
-          {/* text */}
-          <motion.div
-            initial={{ opacity: 0, y: '-50%' }}
+        <div className='flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16'>
+         {/* text */}
+         <motion.div
+            initial={{ opacity: 0, y: '-80%' }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: '-50%' }}
+            exit={{ opacity: 0, y: '-80%' }}
             transition={transition1}
-            onMouseEnter={mouseEnterHandler}
-            onMouseLeave={mouseLeaveHandler}
-            className='w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start'
+            className=' pt-36 pb-12 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start'
           >
             <h1 className='h1'>
             Front End <br />Developer <br /> & Free Lancer
@@ -40,32 +42,22 @@ const Home = () => {
             <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'>
               Cairo, Egypt
             </p>
-            <Link to={'/contact'} className='btn mb-[30px]'>
+            <Link to={'/Contact'} className='btn mb-[30px]'>
               hire me
             </Link>
           </motion.div>
           {/* image */}
-          <div className='flex justify-end max-h-96 lg:max-h-max'>
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0 }}
-              transition={transition1}
-              className='relative lg:-right-40 overflow-hidden'
-            >
-              <motion.img
-                whileHover={{ scale: 1.1 }}
-                transition={transition1}
-                style={{height:'900px'}}
-                src={YoussefImg}
-                alt=''
-              />
-            </motion.div>
+          <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden'>
+
+            <img src={YoussefImg} alt=''      
+            className='img1'
+            />
           </div>
+          
         </div>
       </div>
     </motion.section>
   );
 };
 
-export default Home;
+export default About;
