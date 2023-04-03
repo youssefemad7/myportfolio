@@ -1,191 +1,84 @@
-import React, { useContext } from 'react';
-// import images
-import Image1 from '../img/portfolio/1.png';
-import Image2 from '../img/portfolio/2.png';
-import Image3 from '../img/portfolio/3.png';
-import Image4 from '../img/portfolio/4.png';
-import Image5 from '../img/portfolio/5.png';
-import Image6 from '../img/portfolio/6.png';
-import Image7 from '../img/portfolio/7.png';
-// CSS
-import './App.css'
-// react router dom
-import { Container } from 'react-dom';
-// import link
-import { Link } from 'react-router-dom';
+import React, { useContext, useRef } from 'react';
 // import motion
 import { motion } from 'framer-motion';
 // import transition
 import { transition1 } from '../transitions';
 // import context
 import { CursorContext } from '../context/CursorContext';
-// Fontawesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faLink } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+// import email
+import emailjs from '@emailjs/browser';
 
-const Portfolio = () => {
+
+const Contact = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ouh1t8z', 'template_poxvsmu', form.current, '9yIoQi660VaeP2aIP')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
-  
-
-      <div className='container mx-auto h-full relative '>
-
-        <div className='flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8 '>
-        
-         
-          {/* image grid */}
-          <div // onMouseEnter={mouseEnterHandler}
-            // onMouseLeave={mouseLeaveHandler} 
-            className='grid grid-cols-4   lg:gap-4 port 	'
-
-           
+    <motion.section
+      initial={{ opacity: 0, y: '100%' }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: '100%' }}
+      transition={transition1}
+      className='section bg-white overflow-hidden'
+    >
+      <div className='container mx-auto h-full'>
+        <div className='flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left'>
+          {/* bg */}
+          <motion.div
+            initial={{ opacity: 0, y: '100%' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '100%' }}
+            transition={transition1}
+            className='hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10'
+          ></motion.div>
+          {/* text & form */}
+          <div
+            onMouseEnter={mouseEnterHandler}
+            onMouseLeave={mouseLeaveHandler}
+            className='lg:flex-1 lg:pt-32 px-4'
           >
-            {/* image */}
-
-        <div className='con max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden  '>
-            <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image1}
-                alt=''
-              />          <div class="overlay">
-         <div class="text">
-      <a href='https://github.com/youssefemad7/firstone/tree/main'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://firstone-git-main-youssefemad7.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-        <div className='con max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden '>
-        <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image2}
-                alt=''
-              />     <div class="overlay">
-     <div class="text">
-      <a href='https://github.com/youssefemad7/watces/tree/main'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://watces-git-main-youssefemad7.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-        <div className='con max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-            <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image3}
-                alt=''
-              />  
-              <div class="overlay">
-              <div class="text">
-      <a href='https://github.com/youssefemad7/watces'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://watces-git-main-youssefemad7.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-        <div className='con max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden '>
-        <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image4}
-                alt=''
-              />     <div class="overlay">
-    <div class="text">
-      <a href='https://github.com/youssefemad7/kudzoka'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://kudzoka-git-main-youssefemad7.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-        <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con'>
-        <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image5}
-                alt=''
-              />     <div class="overlay">
-    <div class="text">
-      <a href='https://github.com/youssefemad7/5amsat'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://5amsat-five.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-        <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con'>
-        <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image6}
-                alt=''
-              />     <div class="overlay">
-     <div class="text">
-      <a href='https://github.com/youssefemad7/bootstrap'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://bootstrap-12123-7ewqmsmxf-youssefemad7.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-        <div className=' max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con'>
-        <img
-                className='object-cover h-full lg:h-[220px]  image'
-                src={Image7}
-                alt=''
-              />     <div class="overlay">
-     <div class="text">
-      <a href='https://github.com/youssefemad7/nextjs/tree/main'> 
-      <FontAwesomeIcon icon={faGithub}   className='iconport'/>
-      </a>
-      <a href='https://nextjs-git-main-youssefemad7.vercel.app/'>
-      <FontAwesomeIcon icon={faLink}   className='iconport'/>
-
-      </a>
-
-
-    </div>
-  </div>
-        </div>
-          
-            
-           
-          
-            
+            <h1 className='h1'>Contact me</h1>
+            <p className='mb-12'>I would love to get suggestions from you.</p>
+            {/* form */}
+            <form className='flex flex-col gap-y-4' ref={form} onSubmit={sendEmail}>
+              <div className='flex gap-x-10'>
+                <input
+                  className='outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
+                  type='text'
+                  placeholder='Your name'
+                />
+                <input
+                  className='outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
+                  type='email'
+                  placeholder='Your email address'
+                />
+              </div>
+              <input
+                className='outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
+                type='text'
+                placeholder='Your message'
+              />
+              <button className='btn mb-[30px] mx-auto lg:mx-0 self-start'>
+                Send it
+              </button>
+            </form>
           </div>
+        
         </div>
       </div>
+    </motion.section>
   );
 };
 
-export default Portfolio;
+export default Contact;
