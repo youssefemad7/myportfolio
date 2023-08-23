@@ -6,7 +6,8 @@ import Image3 from '../img/portfolio/3.png';
 import Image4 from '../img/portfolio/4.png';
 import Image5 from '../img/portfolio/5.png';
 import Image6 from '../img/portfolio/6.png';
-import Image7 from '../img/portfolio/7.png';
+import Image8 from '../img/portfolio/8.png';
+
 // CSS
 import './App.css'
 
@@ -151,17 +152,18 @@ const Portfolio = () => {
     </div>
   </div>
         </div>
+    
         <div className=' max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con'>
         <img
                 className='object-cover h-full lg:h-[220px]  image'
-                src={Image7}
+                src={Image8}
                 alt=''
               />     <div class="overlay">
      <div class="text">
-      <a href='https://github.com/youssefemad7/nextjs/tree/main'> 
+      <a href='https://github.com/youssefemad7/jspure'> 
       <FontAwesomeIcon icon={faGithub}   className='iconport'/>
       </a>
-      <a href='https://nextjs-git-main-youssefemad7.vercel.app/'>
+      <a href='https://jspure-lenx.vercel.app/'>
       <FontAwesomeIcon icon={faLink}   className='iconport'/>
 
       </a>
