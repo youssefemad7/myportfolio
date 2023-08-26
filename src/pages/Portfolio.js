@@ -165,10 +165,10 @@ const Portfolio = () => {
                 alt=''
               />     <div class="overlay">
      <div class="text">
-      <a href='https://github.com/youssefemad7/jspure'> 
+      <a href='https://github.com/youssefemad7/port'> 
       <FontAwesomeIcon icon={faGithub}   className='iconport'/>
       </a>
-      <a href='https://jspure-lenx.vercel.app/'>
+      <a href='https://port-liard-beta.vercel.app/'>
       <FontAwesomeIcon icon={faLink}   className='iconport'/>
 
       </a>
