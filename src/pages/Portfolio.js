@@ -40,7 +40,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image1}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/firstone/tree/main">
@@ -58,7 +58,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image2}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/kudzoka">
@@ -93,7 +93,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image4}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/5amsat">
@@ -110,7 +110,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image5}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/bootstrap">
@@ -128,7 +128,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image6}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/jspure">
@@ -145,7 +145,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image7}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/forkify">
@@ -162,7 +162,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image8}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/port">
@@ -179,7 +179,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image9}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/Wolrd-Wise">
@@ -196,7 +196,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image10}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/Fast-React-Pizza">
@@ -213,7 +213,7 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image11}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/The-Wild-Oasis">
@@ -230,13 +230,31 @@ const Portfolio = () => {
               className="object-cover h-full lg:h-[220px]  image"
               src={Image12}
               alt=""
-            />{" "}
+            />
             <div class="overlay">
               <div class="text">
                 <a href="https://github.com/youssefemad7/Facebook-Clone">
                   <FontAwesomeIcon icon={faGithub} className="iconport" />
                 </a>
                 <a href="https://facbook-clone12123.netlify.app/">
+                  <FontAwesomeIcon icon={faLink} className="iconport" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className=" max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con">
+            <img
+              className="object-cover h-full lg:h-[220px]  image"
+              src={Image13}
+              alt=""
+            />
+            <div class="overlay">
+              <div class="text">
+                <a href="https://github.com/youssefemad7/The-Wild-Oasis-Next">
+                  <FontAwesomeIcon icon={faGithub} className="iconport" />
+                </a>
+                <a href="https://the-wild-oasis-website.vercel.app/">
                   <FontAwesomeIcon icon={faLink} className="iconport" />
                 </a>
               </div>
