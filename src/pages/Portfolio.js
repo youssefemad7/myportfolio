@@ -13,7 +13,6 @@ import Image10 from "../img/portfolio/10.png";
 import Image11 from "../img/portfolio/11.png";
 import Image12 from "../img/portfolio/12.png";
 import Image13 from "../img/portfolio/13.png";
-import Image13 from "../img/portfolio/13.png";
 import Image14 from "../img/portfolio/14.png";
 
 // CSS
