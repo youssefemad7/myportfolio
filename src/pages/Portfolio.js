@@ -13,6 +13,8 @@ import Image10 from "../img/portfolio/10.png";
 import Image11 from "../img/portfolio/11.png";
 import Image12 from "../img/portfolio/12.png";
 import Image13 from "../img/portfolio/13.png";
+import Image13 from "../img/portfolio/13.png";
+import Image14 from "../img/portfolio/14.png";
 
 // CSS
 import "./App.css";
@@ -256,6 +258,23 @@ const Portfolio = () => {
                   <FontAwesomeIcon icon={faGithub} className="iconport" />
                 </a>
                 <a href="https://the-wild-oasis-website.vercel.app/">
+                  <FontAwesomeIcon icon={faLink} className="iconport" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className=" max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con">
+            <img
+              className="object-cover h-full lg:h-[220px]  image"
+              src={Image14}
+              alt=""
+            />
+            <div class="overlay">
+              <div class="text">
+                <a href="https://github.com/youssefemad7/E-commerce-Next">
+                  <FontAwesomeIcon icon={faGithub} className="iconport" />
+                </a>
+                <a href="https://ecommerce-red-beta.vercel.app/">
                   <FontAwesomeIcon icon={faLink} className="iconport" />
                 </a>
               </div>
