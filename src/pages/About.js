@@ -46,22 +46,162 @@ const About = () => {
             className="flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">About me</h1>
-            <p className="mb-12 max-w-sm">
-              My Name Is Youssef Emad Abdelnaby Iam 23 years Live in cairo.
-              <b>
-                {" "}
-                Iam Software Engineering , Front End Develober And Freelancer
-              </b>
-              <br />
-              <br />
-              If you want to make a Website just send message for me. And you
-              can see my works to see what can i do
+            <p className="mb-12 max-w-md">
+              I am a Frontend Developer with 1+ year of experience building
+              responsive and scalable web applications using React and Next.js.
+              I focus on clean code, performance optimization, and creating
+              user-friendly interfaces. I enjoy working on real-world projects
+              that solve practical problems and deliver measurable results.
             </p>
             <Link to={"/portfolio"} className="btn">
               View my work
             </Link>
           </motion.div>
         </div>
+
+        <section className="w-full bg-neutral-50 py-28 relative overflow-hidden">
+          {/* Soft background shapes */}
+          <div className="absolute -top-32 -right-32 w-96 h-96 bg-black/5 rounded-full blur-3xl" />
+          <div className="absolute top-60 -left-32 w-96 h-96 bg-black/5 rounded-full blur-3xl" />
+
+          {/* Content container */}
+          <div className="relative max-w-6xl mx-auto px-6">
+            {/* Section Title */}
+            <div className="text-center mb-24">
+              <h2 className="text-3xl md:text-4xl font-bold text-black">
+                Skills & Technologies
+              </h2>
+              <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+                Tools I use to build modern, scalable frontend applications.
+              </p>
+            </div>
+
+            <div className="space-y-24">
+              {/* Frontend */}
+              <div>
+                <div className="relative flex items-center justify-center mb-12">
+                  <span className="absolute inset-x-0 h-px bg-gray-300" />
+                  <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
+                    Frontend
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-5">
+                  {[
+                    "React.js",
+                    "Next.js",
+                    "JavaScript",
+                    "TypeScript",
+                    "HTML5",
+                    "CSS3",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="
+                  px-7 py-3 text-sm rounded-full
+                  bg-white border border-gray-200 text-gray-700
+                  shadow-sm
+                  hover:-translate-y-1 hover:shadow-md
+                  hover:bg-black hover:text-white hover:border-black
+                  transition-all duration-300
+                "
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* State & Data */}
+              <div>
+                <div className="relative flex items-center justify-center mb-12">
+                  <span className="absolute inset-x-0 h-px bg-gray-300" />
+                  <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
+                    State & Data
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-5">
+                  {["Redux Toolkit", "React Query", "REST APIs"].map(
+                    (skill) => (
+                      <span
+                        key={skill}
+                        className="
+                px-7 py-3 text-sm rounded-full
+                bg-white border border-gray-200 text-gray-700
+                shadow-sm
+                hover:-translate-y-1 hover:shadow-md
+                hover:bg-black hover:text-white hover:border-black
+                transition-all duration-300
+              "
+                      >
+                        {skill}
+                      </span>
+                    ),
+                  )}
+                </div>
+              </div>
+
+              {/* Backend & Services */}
+              <div>
+                <div className="relative flex items-center justify-center mb-12">
+                  <span className="absolute inset-x-0 h-px bg-gray-300" />
+                  <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
+                    Backend & Services
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-5">
+                  {["Firebase", "Supabase", "Authentication"].map((skill) => (
+                    <span
+                      key={skill}
+                      className="
+                px-7 py-3 text-sm rounded-full
+                bg-white border border-gray-200 text-gray-700
+                shadow-sm
+                hover:-translate-y-1 hover:shadow-md
+                hover:bg-black hover:text-white hover:border-black
+                transition-all duration-300
+              "
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tools */}
+              <div>
+                <div className="relative flex items-center justify-center mb-12">
+                  <span className="absolute inset-x-0 h-px bg-gray-300" />
+                  <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
+                    Tools
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-5">
+                  {["Git", "GitHub", "Vercel", "Tailwind CSS", "Bootstrap"].map(
+                    (skill) => (
+                      <span
+                        key={skill}
+                        className="
+                px-7 py-3 text-sm rounded-full
+                bg-white border border-gray-200 text-gray-700
+                shadow-sm
+                hover:-translate-y-1 hover:shadow-md
+                hover:bg-black hover:text-white hover:border-black
+                transition-all duration-300
+              "
+                      >
+                        {skill}
+                      </span>
+                    ),
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </motion.section>
   );
