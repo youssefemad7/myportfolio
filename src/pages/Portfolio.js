@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 // import images
 import Image1 from "../img/portfolio/1.png";
 import Image2 from "../img/portfolio/2.png";
@@ -19,15 +18,12 @@ import Image15 from "../img/portfolio/15.png";
 // CSS
 import "./App.css";
 
-// import context
-import { CursorContext } from "../context/CursorContext";
 // Fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Portfolio = () => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <div className="container mx-auto h-full relative ">
       <div className="flex flex-col row lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8 ">
