@@ -29,12 +29,14 @@ const About = () => {
             transition={transition1}
             className=" pt-36 pb-12 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
           >
-            <h1 className="h1 text-[3rem]">
-              Frontend Developer (React | Next.js)
+            <h1 className="h1 text-[2rem]">
+              Full Stack Developer (React | Next.js | Node.js)
             </h1>
-            <p className="text-[26px] lg:text-[36px] font-primary  lg:mb-12">
-              <br />I build scalable, high-performance web applications <br />
-              using React, Next.js, and modern frontend tools
+            <p className="text-[26px] lg:text-[24px] font-primary lg:mb-12">
+              <br />
+              Building scalable web applications with modern frontend
+              <br />
+              technologies and secure, production-ready backend systems
             </p>
             <p className="text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12">
               Cairo, Egypt

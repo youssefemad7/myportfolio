@@ -40,11 +40,12 @@ const About = () => {
           >
             <h1 className="h1">About me</h1>
             <p className="mb-12 max-w-md">
-              I am a Frontend Developer with 1+ year of experience building
-              responsive and scalable web applications using React and Next.js.
-              I focus on clean code, performance optimization, and creating
-              user-friendly interfaces. I enjoy working on real-world projects
-              that solve practical problems and deliver measurable results.
+              I am a Full Stack JavaScript Developer with 1+ year of experience
+              building scalable, high-performance web applications. I develop
+              responsive frontend interfaces using React and Next.js, and design
+              secure backend APIs with Node.js, Express, and MongoDB. I focus on
+              clean architecture, performance optimization, and delivering
+              production-ready solutions that solve real-world problems.
             </p>
             <Link to={"/portfolio"} className="btn">
               View my work
@@ -65,7 +66,8 @@ const About = () => {
                 Skills & Technologies
               </h2>
               <p className="text-gray-500 mt-4 max-w-xl mx-auto">
-                Tools I use to build modern, scalable frontend applications.
+                Technologies I use to build scalable, end-to-end web
+                applications.
               </p>
             </div>
 
@@ -87,17 +89,12 @@ const About = () => {
                     "TypeScript",
                     "HTML5",
                     "CSS3",
+                    "Tailwind CSS",
+                    "Bootstrap",
                   ].map((skill) => (
                     <span
                       key={skill}
-                      className="
-                  px-7 py-3 text-sm rounded-full
-                  bg-white border border-gray-200 text-gray-700
-                  shadow-sm
-                  hover:-translate-y-1 hover:shadow-md
-                  hover:bg-black hover:text-white hover:border-black
-                  transition-all duration-300
-                "
+                      className="px-7 py-3 text-sm rounded-full bg-white border border-gray-200 text-gray-700 shadow-sm hover:-translate-y-1 hover:shadow-md hover:bg-black hover:text-white hover:border-black transition-all duration-300"
                     >
                       {skill}
                     </span>
@@ -105,57 +102,76 @@ const About = () => {
                 </div>
               </div>
 
-              {/* State & Data */}
+              {/* Backend */}
               <div>
                 <div className="relative flex items-center justify-center mb-12">
                   <span className="absolute inset-x-0 h-px bg-gray-300" />
                   <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
-                    State & Data
+                    Backend
                   </h3>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-5">
-                  {["Redux Toolkit", "React Query", "REST APIs"].map(
-                    (skill) => (
-                      <span
-                        key={skill}
-                        className="
-                px-7 py-3 text-sm rounded-full
-                bg-white border border-gray-200 text-gray-700
-                shadow-sm
-                hover:-translate-y-1 hover:shadow-md
-                hover:bg-black hover:text-white hover:border-black
-                transition-all duration-300
-              "
-                      >
-                        {skill}
-                      </span>
-                    ),
-                  )}
+                  {[
+                    "Node.js",
+                    "Express.js",
+                    "REST APIs",
+                    "GraphQL",
+                    "JWT Authentication",
+                    "MVC Architecture",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-7 py-3 text-sm rounded-full bg-white border border-gray-200 text-gray-700 shadow-sm hover:-translate-y-1 hover:shadow-md hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              {/* Backend & Services */}
+              {/* Databases */}
               <div>
                 <div className="relative flex items-center justify-center mb-12">
                   <span className="absolute inset-x-0 h-px bg-gray-300" />
                   <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
-                    Backend & Services
+                    Databases
                   </h3>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-5">
-                  {["Firebase", "Supabase", "Authentication"].map((skill) => (
+                  {[
+                    "MongoDB",
+                    "Mongoose",
+                    "MySQL",
+                    "Sequelize",
+                    "Firebase",
+                    "Supabase",
+                  ].map((skill) => (
                     <span
                       key={skill}
-                      className="
-                px-7 py-3 text-sm rounded-full
-                bg-white border border-gray-200 text-gray-700
-                shadow-sm
-                hover:-translate-y-1 hover:shadow-md
-                hover:bg-black hover:text-white hover:border-black
-                transition-all duration-300
-              "
+                      className="px-7 py-3 text-sm rounded-full bg-white border border-gray-200 text-gray-700 shadow-sm hover:-translate-y-1 hover:shadow-md hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* State & APIs */}
+              <div>
+                <div className="relative flex items-center justify-center mb-12">
+                  <span className="absolute inset-x-0 h-px bg-gray-300" />
+                  <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
+                    State & Data Management
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-5">
+                  {["Redux Toolkit", "React Query", "Axios"].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-7 py-3 text-sm rounded-full bg-white border border-gray-200 text-gray-700 shadow-sm hover:-translate-y-1 hover:shadow-md hover:bg-black hover:text-white hover:border-black transition-all duration-300"
                     >
                       {skill}
                     </span>
@@ -168,23 +184,16 @@ const About = () => {
                 <div className="relative flex items-center justify-center mb-12">
                   <span className="absolute inset-x-0 h-px bg-gray-300" />
                   <h3 className="relative px-8 text-lg font-semibold text-gray-900 bg-neutral-50">
-                    Tools
+                    Tools & Deployment
                   </h3>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-5">
-                  {["Git", "GitHub", "Vercel", "Tailwind CSS", "Bootstrap"].map(
+                  {["Git", "GitHub", "Vercel", "Netlify", "Postman"].map(
                     (skill) => (
                       <span
                         key={skill}
-                        className="
-                px-7 py-3 text-sm rounded-full
-                bg-white border border-gray-200 text-gray-700
-                shadow-sm
-                hover:-translate-y-1 hover:shadow-md
-                hover:bg-black hover:text-white hover:border-black
-                transition-all duration-300
-              "
+                        className="px-7 py-3 text-sm rounded-full bg-white border border-gray-200 text-gray-700 shadow-sm hover:-translate-y-1 hover:shadow-md hover:bg-black hover:text-white hover:border-black transition-all duration-300"
                       >
                         {skill}
                       </span>

@@ -14,6 +14,7 @@ import Image12 from "../img/portfolio/12.png";
 import Image13 from "../img/portfolio/13.png";
 import Image14 from "../img/portfolio/14.png";
 import Image15 from "../img/portfolio/15.png";
+import Image16 from "../img/portfolio/16.png";
 
 // CSS
 import "./App.css";
@@ -423,6 +424,32 @@ const Portfolio = () => {
                   <br />
                   <strong className="text-[1rem]">Tech: </strong>
                   Next.js, NextAuth, React Query
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className=" max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden con">
+            <img
+              className="object-cover h-full lg:h-[220px]  image"
+              src={Image16}
+              alt=""
+            />
+            <div class="overlay">
+              <div class="text">
+                <a href="https://github.com/youssefemad7/Backend-Posts">
+                  <FontAwesomeIcon icon={faGithub} className="iconport" />
+                </a>
+
+                <p className="text-[0.7rem] mt-2">
+                  <strong>Post Management REST API</strong> – A secure and
+                  scalable backend application that enables users to create,
+                  update, delete, and manage posts, with role-based
+                  authorization, JWT authentication, and structured MVC
+                  architecture.
+                  <br />
+                  <strong className="text-[1rem]">Tech: </strong>
+                  Node.js, Express.js, MongoDB, Mongoose, JWT
                 </p>
               </div>
             </div>
